@@ -17,10 +17,30 @@ public class HlavniProgram {
 
         zofka.turnLeft(90);
 
+        nakresliSnehulaka(zofka);
+
+        zofka.turnLeft(90);
 
 
 
 
+    }
+
+    private void nakresliSnehulaka(Turtle zofka) {
+
+        zofka.setLocation(450, 200);
+        zofka.setPenColor(Color.CYAN);
+        nakresliKolecko(zofka, 150);
+        zofka.setLocation(380, 200);
+        nakresliKolecko(zofka, 70);
+        zofka.setLocation(600, 200);
+        nakresliKolecko(zofka, 70);
+        zofka.turnLeft(90);
+        zofka.setLocation(534,115);
+        nakresliKolecko(zofka, 100);
+        zofka.turnRight(180);
+        zofka.setLocation(514,264);
+        nakresliKolecko(zofka,250);
     }
 
 
