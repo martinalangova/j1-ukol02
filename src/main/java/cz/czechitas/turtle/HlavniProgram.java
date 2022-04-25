@@ -21,10 +21,38 @@ public class HlavniProgram {
 
         zofka.turnLeft(90);
 
+        nakresliMasinku(zofka);
 
 
 
     }
+    private void nakresliMasinku(Turtle zofka) {
+        //hlavní obdélník
+        zofka.setLocation(1000, 500);
+        zofka.setPenColor(Color.BLACK);
+
+        nakresliObdelnik(zofka, 150,300);
+
+        //kolečka
+        zofka.setLocation(1050,500);
+        zofka.turnRight(90);
+        nakresliKolecko(zofka,80);
+        zofka.setLocation(1150,500);
+        nakresliKolecko(zofka,80);
+
+        //zadní obdélník
+        zofka.setLocation(1300,500);
+        zofka.turnLeft(90);
+        nakresliObdelnik(zofka,300,170);
+
+        //zadní kolo
+        nakresliKolecko(zofka, 170);
+
+        //přední trojúhelník
+        zofka.setLocation(1000, 565);
+        rovnoramennyTrojuhelnik(zofka,140);
+    }
+
 
     private void nakresliSnehulaka(Turtle zofka) {
 
